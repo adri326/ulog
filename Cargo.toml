@@ -1,0 +1,11 @@
+[package]
+name = "ulog"
+version = "0.1.0"
+edition = "2021"
+authors = ["Emilie Burgun"]
+license = "MIT"
+description = "A tiny logging library, with no allocations or global variables and with opt-in formatting, meant for embedded programs."
+keywords = ["logging", "embedded"]
+categories = ["embedded"]
+
+[dependencies]
