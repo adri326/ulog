@@ -25,6 +25,12 @@ impl From<&ULogLevel> for &'static str {
     }
 }
 
+impl core::fmt::Display for ULogLevel {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+        write!(f, "{}", self.as_str())
+    }
+}
+
 impl From<ULogLevel> for &'static str {
     fn from(value: ULogLevel) -> Self {
         <&'static str as From<&ULogLevel>>::from(&value)
